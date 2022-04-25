@@ -42,14 +42,14 @@ public class Produto
 		}
 		
 		
-		public void diminuirQtdestoque (double quantidade)
+		public double diminuirQtdestoque (double quantidade)
 		{
-			this.quantidade = quantidade - quantidade;
+			return this.quantidade = quantidade - quantidade;
 		}
 		
-		public void adicionarQtdestoque (double quantidade)
+		public double adicionarQtdestoque (double quantidade)
 		{
-			this.quantidade = quantidade + quantidade;
+			return this.quantidade = quantidade + quantidade;
 		}
 		
 		

@@ -5,12 +5,14 @@ public class Pedido {
 	private String data;
 	private double valor;
 	StatusPedido situacao;
+	Cliente clientes;
 	
 	public Pedido(String numero, String data, double valor, Cliente clientes, StatusPedido situacao) { //metodo construtor para classe cliente
 		
 		this.numero = numero;
 		this.data = data;
 		this.valor = valor;
+		this.clientes = clientes;
 		
 	}
 	
@@ -33,9 +35,17 @@ public class Pedido {
 	public double getValor() {
 		return valor;
 	}
-
+	
 	public void setValor(double valor) {
 		this.valor = valor;
+	}
+	
+	public Cliente getCliente() {
+		return clientes;
+	}
+	
+	public Cliente setCliente(Cliente clientes) {
+		return this.clientes = clientes;
 	}
 
 	public StatusPedido getSituacao() {
