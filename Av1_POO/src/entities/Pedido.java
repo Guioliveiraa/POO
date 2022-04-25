@@ -13,7 +13,7 @@ public class Pedido {
 		this.valor = valor;
 		
 	}
-
+	
 	public String getNumero() {
 		return numero;
 	}
